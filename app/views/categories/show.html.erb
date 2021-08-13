@@ -1,9 +1,9 @@
 <h1><%= @category.name%></h1>
 
-<h2>Employees</h2>
-<%= link_to 'New Employee', new_employee_path(department_id: @department.id) %>
+<h2>Categories</h2>
+<%= link_to 'New Category', new_category_path(category_id: @category.id) %>
 <div>
-  <% @employees.each do |employee| %>
+  <% @category.each do |category| %>
     <div>
       <a href="<%= employee_path(employee)%>">
         <%= image_tag employee.avatar if employee.avatar.attached? %>
