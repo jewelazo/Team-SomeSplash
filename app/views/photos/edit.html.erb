@@ -22,15 +22,7 @@
         <%= form.label :category_id%>
     </div>
     <div>
-        <%=form.collection_select :category_id, Category.all, :id, :name%>
-    </div>
-  </div>
-  <div>
-    <div>
-        <%= form.label :category_id%>
-    </div>
-    <div>
-        <%=form.collection_select :category_id, Category.all, :id, :name%>
+        <%=form.collection_select :category_id, @categories, :id, :name%>
     </div>
   </div>
   <div>
