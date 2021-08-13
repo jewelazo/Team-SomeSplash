@@ -1,0 +1,19 @@
+<h1><%= @category.name%></h1>
+
+<h2>Employees</h2>
+<%= link_to 'New Employee', new_employee_path(department_id: @department.id) %>
+<div>
+  <% @employees.each do |employee| %>
+    <div>
+      <a href="<%= employee_path(employee)%>">
+        <%= image_tag employee.avatar if employee.avatar.attached? %>
+      </a>
+      <h4><%= employee.name %></h4>
+      <p><%= employee.role %></p>
+      <div>
+        <%= link_to 'Edit', edit_employee_path(employee) %>
+        <%= link_to 'Delete', employee_path(employee), method: :delete, data: { confirm: "Are you sure?" } %>
+      </div>
+    </div>
+  <% end %>
+</div>
