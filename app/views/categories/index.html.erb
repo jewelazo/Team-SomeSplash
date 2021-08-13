@@ -1,1 +1,23 @@
-<h1>hola</h1>
+<section>
+  <div class="container">
+    <h1>Categories</h1>
+    <%= link_to 'New Categories', new_category_path %>
+
+    <div class="categories-list">
+      <% @categories.each do |category| %>
+      <div>
+        <a href="<%= category_path(category)%>">
+          <%= image_tag category.cover %>
+        </a>
+        <h3><%= category.name%></h3>
+        <span><%= category.photos_count ? category.photos_count : 0%> photos</span>
+        <p> <%= category.description%></p>
+        <div> 
+          <%= link_to 'Edit', edit_category_path(category) %>
+          <%= link_to 'Delete', category_path(category), method: :delete, data: { confirm: "Are you sure?" } %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</section>
