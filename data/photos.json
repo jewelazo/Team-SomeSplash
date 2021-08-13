@@ -2,64 +2,28 @@
     {
         "title": "bird",
         "description": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
-        "category_id": "Animal",
+        "category": "Animal",
         "image": {
-            "io_path":"data/photos/wallpaper.png",
-            "filename":"wallpaper.png"
+            "io_path":"data/photos/bird.png",
+            "filename":"bird.png"
         }
     },
     {
-        "title": "Super Mario World",
+        "title": "one guy",
         "description": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
-        "category": "Animal",
+        "category": "People",
         "image": {
-            "io_path":"data/photos/wallpaper.png",
-            "filename":"wallpaper.png"
+            "io_path":"data/photos/boy.png",
+            "filename":"boy.png"
         }
     },
     {
-        "title": "Super Mario World",
+        "title": "a little bear",
         "description": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
         "category": "Animal",
         "image": {
-            "io_path":"data/photos/wallpaper.png",
-            "filename":"wallpaper.png"
-        }
-    },
-    {
-        "title": "Super Mario World",
-        "description": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
-        "category": "Animal",
-        "image": {
-            "io_path":"data/photos/wallpaper.png",
-            "filename":"wallpaper.png"
-        }
-    },
-    {
-        "title": "Super Mario World",
-        "description": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
-        "category": "Animal",
-        "image": {
-            "io_path":"data/photos/wallpaper.png",
-            "filename":"wallpaper.png"
-        }
-    },
-    {
-        "title": "Super Mario World",
-        "description": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
-        "category": "Animal",
-        "image": {
-            "io_path":"data/photos/wallpaper.png",
-            "filename":"wallpaper.png"
-        }
-    },
-    {
-        "title": "Super Mario World",
-        "description": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
-        "category": "Animal",
-        "image": {
-            "io_path":"data/photos/wallpaper.png",
-            "filename":"wallpaper.png"
+            "io_path":"data/photos/bear.png",
+            "filename":"bear.png"
         }
     }
 ]
