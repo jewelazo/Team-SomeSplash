@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Nature",
+        "description": "Let’s celebrate the magic of Mother Earth — with images of everything our planet has to offer.",
+        "cover": {
+            "io_path": "data/categories/nature.png",
+            "filename": "nature.png"
+        }
+    },
+    {
+        "name": "People",
+        "description": "Real people, captured. Photography has the power to reflect the world around us, give voice to individuals and groups.",
+        "cover": {
+            "io_path": "data/categories/people.png",
+            "filename": "people.png"
+        }
+    },
+    {
+        "name": "Animal",
+        "description": "Real people, ",
+        "cover": {
+            "io_path": "data/categories/animal.png",
+            "filename": "animal.png"
+        }
+    }
+    ,
+    {
+        "name": "Food",
+        "description": "Real people, ",
+        "cover": {
+            "io_path": "data/categories/food.png",
+            "filename": "food.png"
+        }
+    },
+    {
+        "name": "Wallpaper",
+        "description": "From epic drone shots to inspiring moments in nature, find free HD wallpapers worthy of your screens.",
+        "cover": {
+            "io_path": "data/categories/wallpaper.png",
+            "filename": "wallpaper.png"
+        }
+    },
+    {
+        "name": "Technology",
+        "description": "As technology is evolving quickly, what was relevant one year ago may not be today. This is why we’ve teamed up with Dell XPS to build an ever evolving archive of technology.",
+        "cover": {
+            "io_path": "data/categories/tecnology.png",
+            "filename": "tecnology.png"
+        }
+    }
+]
