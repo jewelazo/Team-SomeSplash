@@ -1,10 +1,13 @@
 class PhotosController < ApplicationController
   def new
-    @photo = Photo.new(category_id: params[:category_id])
+    @category = Category.find(params[:category_id])
+    @categories = Category.all
+    @photo = Photo.new(category: @category)
   end
 
   def edit
     @photo = Photo.find(params[:id])
+    @categories = Category.all
   end
 
   def create
@@ -22,7 +25,7 @@ class PhotosController < ApplicationController
     if @photo.update(photo_params)
       redirect_to @photo
     else
-      render :new
+      render :edit
     end
   end
 
@@ -30,12 +33,7 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
   end
 
-  def search
-    @photo = Photo.where(:title.matches => "%#{params[:title]}%")
-    redirect_to @photo
-  end
-
-  def delete
+  def destroy
     @photo = Photo.find(params[:id])
     @photo.destroy
     redirect_to category_path(@photo.category)
@@ -44,6 +42,6 @@ class PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require[:photo].permit(:title, :description, :category_id)
+    params.require[:photo].permit(:title, :description, :category_id, :image)
   end
 end
