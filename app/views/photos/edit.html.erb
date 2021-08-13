@@ -1,0 +1,45 @@
+<h1>Edit Photo</h1>
+
+<%= form_with model: @photo do |form| %>
+  <div>
+    <div>
+        <%= form.label :title%>
+    </div>
+    <div>
+        <%=form.text_field :title%>
+    </div>
+  </div>
+  <div>
+    <div>
+        <%= form.label :description%>
+    </div>
+    <div>
+        <%=form.text_area :description%>
+    </div>
+  </div>
+  <div>
+    <div>
+        <%= form.label :category_id%>
+    </div>
+    <div>
+        <%=form.collection_select :category_id, @categories, :id, :name%>
+    </div>
+  </div>
+  <div>
+    <div>
+        <%= form.label :image%>
+    </div>
+    <div>
+      <% if @photo.cover.attached?%>
+        <%=image_tag @photo.image%>
+      <%end%>
+    </div>
+    <div>
+      <%= form.file_field :image%>
+    </div>
+    </div>
+
+  <%= form.submit%>
+<%end%>
+
+<%=link_to 'Back' , photo_path(@photo)%>
