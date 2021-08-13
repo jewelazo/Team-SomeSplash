@@ -1,5 +1,4 @@
 class CategoriesController < ApplicationController
-
   # GET Categories
   def index
     @categories = Category.all
@@ -12,7 +11,7 @@ class CategoriesController < ApplicationController
 
   # GET New category
   def new
-    @category = Category.new 
+    @category = Category.new
   end
 
   # POST /Category
@@ -23,8 +22,8 @@ class CategoriesController < ApplicationController
       redirect_to @category
     else
       render :new
-    end 
-  end 
+    end
+  end
 
   # GET/Category/:id/edit
   def edit
@@ -40,21 +39,18 @@ class CategoriesController < ApplicationController
     else
       render :edit
     end
-
-  # DELETE/Category/:id
-    def destroy
-      @category = Category.find(params[:id])
-      @category.destroy
-      redirect_to categories_path
-    end
-
   end
 
+  # DELETE/Category/:id
+  def destroy
+    @category = Category.find(params[:id])
+    @category.destroy
+    redirect_to categories_path
+  end
 
-private 
+  private
 
   def category_params
-    params.require(:category).permit(:name, :description) #cover?
-
+    params.require(:category).permit(:name, :description) # cover?
   end
 end
