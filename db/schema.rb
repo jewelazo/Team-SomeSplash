@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_12_233223) do
+ActiveRecord::Schema.define(version: 2021_08_13_000846) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,4 +24,22 @@ ActiveRecord::Schema.define(version: 2021_08_12_233223) do
     t.index ["name"], name: "index_categories_on_name", unique: true
   end
 
+  create_table "comments", force: :cascade do |t|
+    t.text "text"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.bigint "category_id", null: false
+    t.integer "comments_count"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["category_id"], name: "index_photos_on_category_id"
+    t.index ["title"], name: "index_photos_on_title", unique: true
+  end
+
+  add_foreign_key "photos", "categories"
 end
