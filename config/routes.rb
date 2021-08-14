@@ -1,13 +1,6 @@
-# Rails.application.routes.draw do
-#   root to: 'categories#index'
-#   #resources :comments
-#   #resources :photos
-#  # resources :categories
-#   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-# #end
-
 Rails.application.routes.draw do
   root to: 'categories#index'
+  get '/search' => 'photos#search', :as => 'search_photo'
   resources :photos do
     resources :comments
   end
@@ -17,5 +10,6 @@ Rails.application.routes.draw do
     resources :comments
   end
   # For details on the DSL available within
+  resources :searches
   resources :comments
 end
