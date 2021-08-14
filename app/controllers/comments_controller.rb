@@ -1,34 +1,17 @@
 class CommentsController < ApplicationController
-  # GET /comments/:id
-  def show
-    @comment = Comment.find(params[:id])
-  end
-
-  # GET /comments/new?category_id="1"
-  def new
-    @comment = Comment.new(category_id: params[:category_id])
-  end
-
-  # POST /employees
   def create
-    @comment = Comment.new(comment_params)
-
-    if @comment.save
-      redirect_to @comment
-    else
-      render :new
-    end
+    @category = Category.find(params[:category_id])
+    @comment = @category.comments.create(comment_params)
+      redirect_to category_path(@comment.commentable_id)
   end
 
-  # DELETE /comments/:id
   def destroy
     @comment = Comment.find(params[:id])
     @comment.destroy
-    redirect_to categories_path(@comment.category)
+    redirect_to category_path(@comment.commentable_id)
   end
 
   private
-
   def comment_params
     params.require(:comment).permit(:text)
   end

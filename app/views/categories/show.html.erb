@@ -16,3 +16,6 @@
     </div>
   <%end%>
 </div>
+<h2> <%= @category.comments.count %> Comments</h2>
+      <%= render @category.comments %>
+      <%= render 'comments/forms' %>
