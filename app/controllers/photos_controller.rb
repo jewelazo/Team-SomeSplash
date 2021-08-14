@@ -16,6 +16,8 @@ class PhotosController < ApplicationController
     if @photo.save
       redirect_to @photo
     else
+      @category = Category.find(@photo[:category_id])
+      @categories = Category.all
       render :new
     end
   end
@@ -25,6 +27,8 @@ class PhotosController < ApplicationController
     if @photo.update(photo_params)
       redirect_to category_photo_path(@photo)
     else
+      @category = Category.find(@photo[:category_id])
+      @categories = Category.all
       render :edit
     end
   end
