@@ -1,19 +1,16 @@
 <h1><%= @category.name%></h1>
-
 <h2>Categories</h2>
 <%= link_to 'New Category', new_category_path(category_id: @category.id) %>
 <div>
-  <% @category.each do |category| %>
     <div>
-      <a href="<%= employee_path(employee)%>">
-        <%= image_tag employee.avatar if employee.avatar.attached? %>
+      <a href="<%= category_path(@category)%>">
+        <%= image_tag @category.cover if @category.cover.attached? %>
       </a>
-      <h4><%= employee.name %></h4>
-      <p><%= employee.role %></p>
+      <h4><%= @category.name %></h4>
+      <p><%= @category.description %></p>
       <div>
-        <%= link_to 'Edit', edit_employee_path(employee) %>
-        <%= link_to 'Delete', employee_path(employee), method: :delete, data: { confirm: "Are you sure?" } %>
+        <%= link_to 'Edit', edit_category_path(@category) %>
+        <%= link_to 'Delete', category_path(@category), method: :delete, data: { confirm: "Are you sure?" } %>
       </div>
     </div>
-  <% end %>
 </div>
