@@ -38,6 +38,13 @@ class PhotosController < ApplicationController
     @photo.destroy
     redirect_to category_path(@photo.category)
   end
+  def search
+    if params[:search].blank?  
+      @results = Photo.where("lower(title) LIKE :search", search: " ") 
+    else  
+      @results = Photo.where("lower(title) LIKE :search", search: "%#{params[:search]}%") 
+    end  
+  end
 
   private
 
