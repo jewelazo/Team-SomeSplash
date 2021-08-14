@@ -1,16 +1,18 @@
 <h1><%= @category.name%></h1>
 <h2>Categories</h2>
-<%= link_to 'New Category', new_category_path(category_id: @category.id) %>
+<%= link_to 'New Photo', new_photo_path(category_id: @category.id) %>
 <div>
+  <% @photos.each do |photo| %>
     <div>
-      <a href="<%= category_path(@category)%>">
-        <%= image_tag @category.cover if @category.cover.attached? %>
+      <a href="<%= category_path(photo)%>">
+        <%= image_tag photo.image if photo.image.attached? %>
       </a>
-      <h4><%= @category.name %></h4>
-      <p><%= @category.description %></p>
+      <h4><%= photo.title %></h4>
+      <p><%= photo.description %></p>
       <div>
-        <%= link_to 'Edit', edit_category_path(@category) %>
-        <%= link_to 'Delete', category_path(@category), method: :delete, data: { confirm: "Are you sure?" } %>
+        <%= link_to 'Edit', edit_category_path(photo) %>
+        <%= link_to 'Delete', category_path(photo), method: :delete, data: { confirm: "Are you sure?" } %>
       </div>
     </div>
+  <%end%>
 </div>
