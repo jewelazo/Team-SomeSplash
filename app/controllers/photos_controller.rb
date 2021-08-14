@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
   def new
-    @category = Category.find(params[:category_id])
+    @category = Category.find(9) # Category.find(params[:category_id])
     @categories = Category.all
     @photo = Photo.new(category: @category)
   end
@@ -42,6 +42,6 @@ class PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require[:photo].permit(:title, :description, :category_id, :image)
+    params.require(:photo).permit(:title, :description, :category_id, :image)
   end
 end

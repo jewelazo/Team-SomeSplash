@@ -30,7 +30,7 @@
         <%= form.label :image%>
     </div>
     <div>
-      <% if @photo.cover.attached?%>
+      <% if @photo.image.attached?%>
         <%=image_tag @photo.image%>
       <%end%>
     </div>
