@@ -1,7 +1,7 @@
-<%= image_tag @photo.image %>
 <h1><%= @photo.title%></h1>
 <p><%= @photo.description%></p>
 <p><%= @photo.updated_at%></p>
-<%= link_to 'Edit', edit_photo_path(@photo) %>
-<%= link_to 'Delete', photo_path(@photo), method: :delete, data: { confirm: "Are you sure?" } %>
-<%= link_to 'Back', category_path(@photo.category) %>
+<%= image_tag @photo.image %>
+<button><%= link_to 'Edit', edit_photo_path(@photo) %></button>
+<button><%= link_to 'Delete', photo_path(@photo), method: :delete, data: { confirm: "Are you sure?" } %></button>
+<button><%= link_to 'Back', category_path(@photo.category) %></button>
