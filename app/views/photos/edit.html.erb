@@ -1,6 +1,18 @@
 <h1>Edit Photo</h1>
 
+<% if @photo.errors.size.positive? %>
+  <div>
+    <ul>
+      <h2>Something went wrong:</h2>
+      <% @photo.errors.full_messages.each do |message| %>
+        <li><%= message %> </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <%= form_with model: @photo do |form| %>
+
   <div>
     <div>
         <%= form.label :title%>
@@ -40,6 +52,8 @@
     </div>
 
   <%=form.submit%>
+    
+
 <%end%>
 
 <%=link_to 'Back' , category_photo_path(@photo)%>
