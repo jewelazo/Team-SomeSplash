@@ -7,6 +7,7 @@ class CategoriesController < ApplicationController
   # GET/Category/:id/show
   def show
     @category = Category.find(params[:id])
+    @photos = @category.photos
   end
 
   # GET New category

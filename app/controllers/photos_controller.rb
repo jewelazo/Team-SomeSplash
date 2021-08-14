@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
   def new
-    @category = Category.find(9) # Category.find(params[:category_id])
+    @category = Category.find(params[:category_id])
     @categories = Category.all
     @photo = Photo.new(category: @category)
   end
