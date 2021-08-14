@@ -8,8 +8,8 @@
         <%= image_tag photo.image if photo.image.attached? %>
       </a>
       <h4><%= photo.title %></h4>
-      <p><%= photo.comments.count %>
-      <%= photo.comments.count > 1 ? "comments" : "comment" %></p>
+      <span><%= photo.comments.count %>
+      <%= photo.comments.count > 1 ? "comments" : "comment" %></span>
       <div>
         <button><%= link_to 'Edit', edit_photo_path(photo)%></button>
         <button><%= link_to 'Delete', photo_path(photo), method: :delete, data: { confirm: "Are you sure?" } %></button>

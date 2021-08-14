@@ -11,7 +11,8 @@
   </head>
 
   <body>
-    <header> <%= link_to image_tag('somesplash.png', alt: "Somesplash"), root_path %> <button> <%= link_to "Search", root_path%> </button> </header>
+    <header><div><%= link_to image_tag('somesplash.png', alt: "Somesplash"), root_path %></div>
+    <div><button class = "button_search"> <%= link_to "SEARCH", root_path%> </button></div></header>
     <%= yield %>
     <footer>
       <h3>Build with ♥ by</h3>

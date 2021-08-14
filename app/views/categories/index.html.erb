@@ -2,21 +2,24 @@
 <section>
   <div class="container">
     <h1>Categories</h1>
-    <button><%= link_to 'New Category', new_category_path %></button>
+    <button class = "button_new_category"><%= link_to 'New Category', new_category_path %></button>
 
     <div class="categories-list">
       <% @categories.each do |category| %>
-      <div>
+      <div class = "cards">
         <a href="<%= category_path(category)%>">
           <%= image_tag category.cover %>
         </a>
         <h3><%= category.name%></h3>
         <span><%= category.photos_count ? category.photos_count : 0%> photos</span>
-        <h2> <%= category.comments.count %> Comments</h2>
         <p> <%= category.description%></p>
+        <div class = "button_edit_and_delete">
         <div> 
-          <button><%= link_to 'Edit', edit_category_path(category) %></button>
-          <button><%= link_to 'Delete', category_path(category), method: :delete, data: { confirm: "Are you sure?" } %></button>
+          <%= link_to image_tag('edit.png', alt: "Button edit"), edit_category_path(category) %>
+        </div>
+        <div>
+          <%= link_to image_tag('delete.png', alt: "Button delete"), method: :delete, data: { confirm: "Are you sure?" } %>
+        </div>
         </div>
       <% end %>
       </div>
