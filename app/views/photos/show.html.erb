@@ -5,3 +5,5 @@
 <button><%= link_to 'Edit', edit_photo_path(@photo) %></button>
 <button><%= link_to 'Delete', photo_path(@photo), method: :delete, data: { confirm: "Are you sure?" } %></button>
 <button><%= link_to 'Back', category_path(@photo.category) %></button>
+<%= render @photo.comments %>
+<%= render 'comments/formsp' %>

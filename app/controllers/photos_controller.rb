@@ -23,7 +23,6 @@ class PhotosController < ApplicationController
   def update
     @photo = Photo.find(params[:id])
     if @photo.update(photo_params)
-      #redirect_to @photo
       redirect_to category_photo_path(@photo)
     else
       render :edit

@@ -7,15 +7,15 @@
 # #end
 
 Rails.application.routes.draw do
-  root to: "categories#index"
-resources :photos do
-  resources :comments
-end
+  root to: 'categories#index'
+  resources :photos do
+    resources :comments
+  end
 
-resources :categories do
-  resources :photos
+  resources :categories do
+    resources :photos
+    resources :comments
+  end
+  # For details on the DSL available within
   resources :comments
-end
-# For details on the DSL available within 
-resources :comments
 end

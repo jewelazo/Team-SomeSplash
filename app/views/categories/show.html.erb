@@ -4,11 +4,12 @@
 <div>
   <% @photos.each do |photo| %>
     <div>
-      <a href="<%= category_photo_path(photo)%>">
+      <a href="<%= photo_path(photo)%>">
         <%= image_tag photo.image if photo.image.attached? %>
       </a>
       <h4><%= photo.title %></h4>
-      <p><%= photo.comments_count %></p>
+      <p><%= photo.comments.count %>
+      <%= photo.comments.count > 1 ? "comments" : "comment" %></p>
       <div>
         <button><%= link_to 'Edit', edit_photo_path(photo)%></button>
         <button><%= link_to 'Delete', photo_path(photo), method: :delete, data: { confirm: "Are you sure?" } %></button>
@@ -16,6 +17,5 @@
     </div>
   <%end%>
 </div>
-<h2> <%= @category.comments.count %> Comments</h2>
       <%= render @category.comments %>
       <%= render 'comments/forms' %>
