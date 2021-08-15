@@ -1,6 +1,6 @@
 <%= form_for([@photo,@photo.comments.build]) do |f| %>
   <p>
-    <%= f.text_area :text %>
+    <%= f.text_area :text, class: 'form-control', autofocus: true, placeholder: 'Some respectul comment here.'%>
   </p>
   <p>
     <%= f.submit %>

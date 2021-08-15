@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 body {
   max-width: 360px;
+  padding-left: 16px;
 }
 
 img {
@@ -13,12 +14,12 @@ img {
   top: 92px;
 }
 
-h2 {
+h1 {
   font-family: Montserrat;
+  font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  color: #c51c3b;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .form-label {
@@ -28,9 +29,15 @@ h2 {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #303036;
+  padding-top: 16px;
+  padding-bottom: 4px;
 }
 
 .form-text-field {
+  width: 328px;
+  height: 40px;
+  left: 0px;
+  top: 20px;
   font: Inter;
   size: 16px;
   line-height: 24px;
@@ -40,6 +47,14 @@ h2 {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   background: #ffffff;
+}
+
+select {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .form-text-area {
@@ -96,4 +111,71 @@ select {
   top: 20px;
   border-radius: 6px;
   padding: 8px, 8px, 8px, 12px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #c51c3b;
+}
+
+li {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+input[type="file" i] {
+  color: black;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+
+input[type="submit"] {
+  width: 328px;
+  height: 36px;
+  top: 310px;
+  padding: 8px, 16px, 8px, 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: white;
+  background: #757575;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-back {
+  border: none;
+  border-radius: 4px;
+  width: 328px;
+  height: 36px;
+  top: 310px;
+  padding: 8px, 16px, 8px, 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: black;
+  background: #f2f2f2;
 }
