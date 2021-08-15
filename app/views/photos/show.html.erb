@@ -1,18 +1,6 @@
 <h1><%= @photo.title%></h1>
 <p><%= @photo.description%></p>
-<p><%= @photo.updated_at%></p>
+<p>Updated at <%= "August" if @photo.updated_at.month == 8 %> <%= @photo.updated_at.day%>,<%= @photo.updated_at.year%></p>
 <%= image_tag @photo.image if @photo.image.attached? %>
-<div class = "button_edit_and_delete">
-        <div> 
-          <%= link_to image_tag('edit.png', alt: "Button edit"), edit_photo_path(@photo) %>
-        </div>
-        <div>
-<%= link_to image_tag('delete.png', alt: "Delete"), photo_path(@photo), method: :delete, data: { confirm: "Are you sure?" } %>
-        </div>
-</div>
-<button><%= link_to 'Back', category_path(@photo.category) %></button>
-<div class = "order_comments">
-  <%= render @photo.comments %>
-  <h2>Comments</h2>
-  <%= render 'comments/formsp' %>
-</div>
+<%= render @photo.comments %>
+<%= render 'comments/formsp' %>
