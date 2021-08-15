@@ -194,3 +194,44 @@ input[type="submit"] {
   font-size: 16px;
   line-height: 24px;
 }
+
+.button_new_photo a {
+  text-decoration: none !important;
+  color: #ffffff;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+.button_new_photo {
+  margin-left: 16px;
+  margin-bottom: 22px;
+  cursor: auto;
+  border: none;
+  display: inline-block;
+  width: 130px;
+  height: 28px;
+  background: #757575;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.card-photo {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: static;
+  width: 328px;
+  height: 292px;
+  padding: 0px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}

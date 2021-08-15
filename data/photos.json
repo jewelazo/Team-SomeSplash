@@ -1,7 +1,7 @@
 [
     {
         "title": "bird",
-        "description": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
+        "description": "This is a beatuiful birs",
         "category": "Animal",
         "image": {
             "io_path":"data/photos/bird.png",
@@ -10,7 +10,7 @@
     },
     {
         "title": "one guy",
-        "description": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
+        "description": "This is a guy drinking coffe.",
         "category": "People",
         "image": {
             "io_path":"data/photos/boy.png",
@@ -19,11 +19,94 @@
     },
     {
         "title": "a little bear",
-        "description": "A 2D platformer and first entry on the SNES in the Super Mario franchise, Super Mario World follows Mario as he attempts to defeat Bowser's underlings and rescue Princess Peach from his clutches. The game features a save system, a less linear world map, an expanded movement arsenal and numerous new items for Mario, alongside new approaches to level design and art direction.",
+        "description": "There are a pair of bears",
         "category": "Animal",
         "image": {
             "io_path":"data/photos/bear.png",
             "filename":"bear.png"
+        }
+    },
+    {
+        "title": "a tender cat",
+        "description": "This is a beautiful cat",
+        "category": "Animal",
+        "image": {
+            "io_path":"data/photos/cat.png",
+            "filename":"cat.png"
+        }
+    },
+    {
+        "title": "onions",
+        "description": "These are onions",
+        "category": "Food",
+        "image": {
+            "io_path":"data/photos/onions.png",
+            "filename":"onions.png"
+        }
+    },
+    {
+        "title": "sunset",
+        "description": "It is a sunset at the beach",
+        "category": "Nature",
+        "image": {
+            "io_path":"data/photos/sunset.png",
+            "filename":"sunset.png"
+        }
+    },
+    {
+        "title": "play",
+        "description": "This is a play station",
+        "category": "Technology",
+        "image": {
+            "io_path":"data/photos/play.png",
+            "filename":"play.png"
+        }
+    }
+    ,
+    {
+        "title": "tigger",
+        "description": "This is a tigger from winnie poohn",
+        "category": "Animal",
+        "image": {
+            "io_path":"data/photos/tigger.png",
+            "filename":"tigger.png"
+        }
+    },
+    {
+        "title": "woman",
+        "description": "This is an older woman",
+        "category": "People",
+        "image": {
+            "io_path":"data/photos/woman.png",
+            "filename":"woman.png"
+        }
+    },
+    {
+        "title": "uva",
+        "description": "This is a fruit very common in peru",
+        "category": "Food",
+        "image": {
+            "io_path":"data/photos/uva.png",
+            "filename":"uva.png"
+        }
+    }
+    ,
+    {
+        "title": "sea_w",
+        "description": "This is a beautifull wallpaper for your computer",
+        "category": "Wallpaper",
+        "image": {
+            "io_path":"data/photos/sea_w.png",
+            "filename":"sea_w.png"
+        }
+    },
+    {
+        "title": "couple",
+        "description": "This is a couple in a house",
+        "category": "People",
+        "image": {
+            "io_path":"data/photos/couple.png",
+            "filename":"couple.png"
         }
     }
 ]

@@ -17,7 +17,7 @@
     },
     {
         "name": "Animal",
-        "description": "Real people, ",
+        "description": "Animals are multicellular eukaryotes that lack cell walls. All animals are heterotrophs. Animals have sensory organs, the ability to move, and internal digestion.",
         "cover": {
             "io_path": "data/categories/animal.png",
             "filename": "animal.png"
@@ -26,7 +26,7 @@
     ,
     {
         "name": "Food",
-        "description": "Real people, ",
+        "description": "Food, substance consisting essentially of protein, carbohydrate, fat, and other nutrients used in the body of an organism to sustain growth and vital processes and to furnish energy. ",
         "cover": {
             "io_path": "data/categories/food.png",
             "filename": "food.png"
