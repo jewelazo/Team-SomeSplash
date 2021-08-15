@@ -41,7 +41,7 @@ h1 {
   font: Inter;
   size: 16px;
   line-height: 24px;
-  color: #d3d3d3;
+  color: black;
   border: 1px solid #d3d3d3;
   box-sizing: border-box;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
@@ -171,11 +171,26 @@ input[type="submit"] {
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.button-back a {
+  text-decoration: none !important;
+  color: black;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   letter-spacing: 1.25px;
   text-transform: uppercase;
-  color: black;
-  background: #f2f2f2;
+}
+
+::placeholder {
+  padding-left: 12px;
+  padding-top: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
