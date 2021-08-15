@@ -18,38 +18,37 @@
   
 
   <div>
-    <div>
+    <div class="form-label">
         <%= form.label :title%>
     </div>
-    <div>
-        <%=form.text_field :title%>
+    <div class="form-text-field">
+        <%=form.text_field :title, placeholder: "Big mountain"%>
     </div>
   </div>
   <div>
-    <div>
+    <div class="form-label">
         <%= form.label :description%>
     </div>
-    <div>
-        <%=form.text_area :description%>
+    <div class="form-text-area">
+        <%=form.text_area :description, placeholder: "Photo taken on ... "%>
     </div>
   </div>
   <div>
-    <div>
+    <div class="form-label">
         <%= form.label :category_id%>
     </div>
-    <div>
-        <%=form.collection_select :category_id, @categories, :id, :name%>
+   <div class="form-collection">
+        <%=form.collection_select :category_id, @categories, :id, :name %>
     </div>
   </div>
   <div>
-    <div>
+    <div class="form-label">
         <%= form.label :image%>
     </div>
     <div>
       <%= form.file_field :image%>
     </div>
   </div>
-  <%= form.submit%>
+  <%=form.submit%>
 <%end%>
-
-<%=link_to 'Back' , category_photos_path(@photo.category)%>
+<%=link_to 'Back',category_photo_path(@photo)%>

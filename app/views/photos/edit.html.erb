@@ -3,9 +3,9 @@
 <% if @photo.errors.size.positive? %>
   <div>
     <ul>
-      <h2>Something went wrong:</h2>
+      <h2 class="errors-title">Something went wrong:</h2>
       <% @photo.errors.full_messages.each do |message| %>
-        <li><%= message %> </li>
+        <li class="errors-list"><%= message %> </li>
       <% end %>
     </ul>
   </div>
@@ -14,31 +14,31 @@
 <%= form_with model: @photo do |form| %>
 
   <div>
-    <div>
+    <div class="form-label">
         <%= form.label :title%>
     </div>
-    <div>
+    <div class="form-text-field">
         <%=form.text_field :title%>
     </div>
   </div>
   <div>
-    <div>
+    <div class="form-label">
         <%= form.label :description%>
     </div>
-    <div>
+    <div class="form-text-area">
         <%=form.text_area :description%>
     </div>
   </div>
   <div>
-    <div>
+    <div class="form-label">
         <%= form.label :category_id%>
     </div>
-    <div>
+    <div class="form-collection">
         <%=form.collection_select :category_id, @categories, :id, :name%>
     </div>
   </div>
   <div>
-    <div>
+    <div class="form-label">
         <%= form.label :image%>
     </div>
     <div>
@@ -50,10 +50,7 @@
       <%= form.file_field :image%>
     </div>
     </div>
-
-  <%=form.submit%>
-    
-
+  <%= form.submit%>
 <%end%>
 
 <%=link_to 'Back' , category_photo_path(@photo)%>
