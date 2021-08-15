@@ -13,37 +13,23 @@
 
 <%= form_with model: @category  do |form| %>
   <div>
-    <div>
-      <%= form.label :name%>
-    </div>
-    <div>
+      <%= form.label :name, class: 'form-label'%>
       <%= form.text_field :name%>
-    </div>
   </div>
 
   <div>
-    <div>
-      <%= form.label :description%>
-    </div>
-    <div>
+      <%= form.label :description, class: 'form-label'%>
       <%= form.text_area :description%>
-    </div>
   </div>
 
   <div>
-    <div>
-      <%= form.label :cover%>
-    </div>
-    <div>
+      <%= form.label :cover, class: 'form-label'%>
       <% if @category.cover.attached?%>
         <%= image_tag @category.cover %>
       <% end %>
-  </div>
-    <div>
       <%= form.file_field :cover%>
-    </div>
   </div>
 
   <%= form.submit%>
 <% end %>
-<button><%= link_to 'Back', categories_path(@category) %></button>
+<button class="button-back"><%=link_to 'Back' , categories_path %></button>
