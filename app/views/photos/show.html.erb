@@ -2,8 +2,14 @@
 <p><%= @photo.description%></p>
 <p><%= @photo.updated_at%></p>
 <%= image_tag @photo.image if @photo.image.attached? %>
-<button><%= link_to 'Edit', edit_photo_path(@photo) %></button>
-<button><%= link_to 'Delete', photo_path(@photo), method: :delete, data: { confirm: "Are you sure?" } %></button>
+<div class = "button_edit_and_delete">
+        <div> 
+          <%= link_to image_tag('edit.png', alt: "Button edit"), edit_photo_path(@photo) %>
+        </div>
+        <div>
+<%= link_to image_tag('delete.png', alt: "Delete"), photo_path(@photo), method: :delete, data: { confirm: "Are you sure?" } %>
+        </div>
+</div>
 <button><%= link_to 'Back', category_path(@photo.category) %></button>
 <div class = "order_comments">
   <%= render @photo.comments %>

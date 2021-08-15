@@ -2,46 +2,41 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.comments_style
-{
-  border-top: 4px solid #D3D3D3;
+.comments_style {
+  border-top: 4px solid #d3d3d3;
   max-width: 328px;
   border-top: 2px solid #D3D3D3;
   max-width: 328px;
   margin-left: 16px;
 }
-.time_and_delete
-{
+.time_and_delete {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: baseline;
 }
-.button_c
-{
+.button_c {
   height: 36px;
   width: 328px;
   left: 0px;
   top: 96px;
   border-radius: 4px;
   padding: 8px, 16px, 8px, 16px;
-  
 }
-.form-control
-{
+.form-control {
   height: 88px;
   width: 328px;
   border-radius: 6px;
   padding: 8px, 12px, 8px, 12px;
   margin-left: 16px;
-  background: #FFFFFF;
-  border: 1px solid #D3D3D3;
+  background: #ffffff;
+  border: 1px solid #d3d3d3;
   box-sizing: border-box;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   outline: none;
 }
-::placeholder{
+::placeholder {
   padding-left: 12px;
   padding-top: 8px;
   font-family: Inter;
@@ -50,8 +45,7 @@
   font-size: 16px;
   line-height: 24px;
 }
-.button_comment
-{
+.button_comment {
   margin-left: 16px;
   cursor: pointer;
   border: none;
@@ -70,7 +64,7 @@
   align-items: center;
   padding: 6px 10px;
 }
-input[type=submit]{
+input[type="submit"] {
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -79,5 +73,5 @@ input[type=submit]{
   text-align: center;
   letter-spacing: 1.25px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }

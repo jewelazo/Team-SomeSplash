@@ -18,38 +18,22 @@
   
 
   <div>
-    <div>
-        <%= form.label :title%>
-    </div>
-    <div>
-        <%=form.text_field :title%>
-    </div>
+        <%= form.label :title, class: 'form-label'%>
+        <%=form.text_field :title, class: 'form-text-field', autofocus: true, placeholder: 'Big mountain'%>
   </div>
   <div>
-    <div>
-        <%= form.label :description%>
-    </div>
-    <div>
-        <%=form.text_area :description%>
-    </div>
+        <%= form.label :description, class: 'form-label'%>
+        <%=form.text_area :description,class: 'form-text-area', autofocus: true, placeholder: 'Photo taken on ...'%>
   </div>
   <div>
-    <div>
-        <%= form.label :category_id%>
-    </div>
-    <div>
-        <%=form.collection_select :category_id, @categories, :id, :name%>
-    </div>
+        <%= form.label :category_id, class: 'form-label'%>
+        <%=form.collection_select :category_id, @categories, :id, :name,class: 'form-collection'%>
   </div>
   <div>
-    <div>
-        <%= form.label :image%>
-    </div>
-    <div>
+        <%= form.label :image,class: 'form-label'%>
       <%= form.file_field :image%>
-    </div>
   </div>
-  <%= form.submit%>
+  <%=form.submit%>
 <%end%>
 
-<%=link_to 'Back' , category_photos_path(@photo.category)%>
+<button class="button-back"><%=link_to 'Back' , category_path(@photo.category_id)%></button>

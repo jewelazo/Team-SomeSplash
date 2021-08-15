@@ -3,9 +3,9 @@
 <% if @photo.errors.size.positive? %>
   <div>
     <ul>
-      <h2>Something went wrong:</h2>
+      <h2 class="errors-title">Something went wrong:</h2>
       <% @photo.errors.full_messages.each do |message| %>
-        <li><%= message %> </li>
+        <li class="errors-list"><%= message %> </li>
       <% end %>
     </ul>
   </div>
@@ -14,33 +14,19 @@
 <%= form_with model: @photo do |form| %>
 
   <div>
-    <div>
-        <%= form.label :title%>
-    </div>
-    <div>
-        <%=form.text_field :title%>
-    </div>
+        <%= form.label :title, class: 'form-label'%>
+        <%=form.text_field :title, class: 'form-text-field'%>
   </div>
   <div>
-    <div>
-        <%= form.label :description%>
-    </div>
-    <div>
-        <%=form.text_area :description%>
-    </div>
+        <%= form.label :description, class: 'form-label'%>
+        <%=form.text_area :description,class: 'form-text-area'%>
+  </div>
+ <div>
+        <%= form.label :category_id, class: 'form-label'%>
+        <%=form.collection_select :category_id, @categories, :id, :name,class: 'form-collection'%>
   </div>
   <div>
-    <div>
-        <%= form.label :category_id%>
-    </div>
-    <div>
-        <%=form.collection_select :category_id, @categories, :id, :name%>
-    </div>
-  </div>
-  <div>
-    <div>
-        <%= form.label :image%>
-    </div>
+        <%= form.label :image,class: 'form-label'%>
     <div>
       <% if @photo.image.attached?%>
         <%=image_tag @photo.image%>
@@ -50,10 +36,7 @@
       <%= form.file_field :image%>
     </div>
     </div>
-
-  <%=form.submit%>
-    
-
+    <%=form.submit%>
 <%end%>
 
-<%=link_to 'Back' , category_photo_path(@photo)%>
+<button class="button-back"><%=link_to 'Back' , category_path(@photo.category_id)%></button>

@@ -1,3 +1,196 @@
 // Place all the styles related to the Photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  max-width: 360px;
+  padding-left: 16px;
+}
+
+img {
+  border-radius: 8px 8px 0px 0px;
+  max-width: 328px;
+  max-height: 227px;
+  left: 16px;
+  top: 92px;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.form-label {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #303036;
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+.form-text-field {
+  width: 328px;
+  height: 40px;
+  left: 0px;
+  top: 20px;
+  font: Inter;
+  size: 16px;
+  line-height: 24px;
+  color: black;
+  border: 1px solid #d3d3d3;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+select {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-text-area {
+  width: 328px;
+  height: 136px;
+  outline: none;
+  border: 1px solid #d3d3d3;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.btn {
+  padding: 8px 16px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: none;
+}
+
+.btn--icon-only {
+  padding: 8px;
+  border-radius: 1000px;
+}
+
+.btn--back {
+  color: black;
+}
+
+.btn--white {
+  color: white;
+}
+
+.btn--large {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+}
+
+select {
+  width: 328px;
+  height: 40px;
+  top: 20px;
+  border-radius: 6px;
+  padding: 8px, 8px, 8px, 12px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #c51c3b;
+}
+
+li {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+input[type="file" i] {
+  color: black;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+
+input[type="submit"] {
+  width: 328px;
+  height: 36px;
+  top: 310px;
+  padding: 8px, 16px, 8px, 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: white;
+  background: #757575;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-back {
+  border: none;
+  border-radius: 4px;
+  width: 328px;
+  height: 36px;
+  top: 310px;
+  padding: 8px, 16px, 8px, 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.button-back a {
+  text-decoration: none !important;
+  color: black;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+::placeholder {
+  padding-left: 12px;
+  padding-top: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
