@@ -13,34 +13,21 @@
 
 <%= form_with model: @category  do |form| %>
   <div>
-    <div>
-      <%= form.label :name%>
-    </div>
-    <div>
-      <%= form.text_field :name, class: 'name-ph-control', autofocus: true, placeholder: 'Technology'%>
-    </div>
+      <%= form.label :name, class: 'form-label'%>
+      <%= form.text_field :name, class: 'form-text-field',  autofocus: true, placeholder: 'Technology'%>
   </div>
 
   <div>
-    <div>
-      <%= form.label :description%>
-    </div>
-    <div>
-
-      <%= form.text_area :name, class: 'name-ph-control', autofocus: true,
+      <%= form.label :description, class: 'form-label'%>
+       <%= form.text_area :namen,class: 'form-text-area', autofocus: true,
        placeholder: 'Exploring our complicated relationship with technology...'%>
-    </div>
   </div>
 
   <div>
-    <div>
-      <%= form.label :cover%>
-    </div>
-    <div>
+      <%= form.label :cover, class: 'form-label'%>
       <%= form.file_field :cover%>
-    </div>
   </div>
 
   <%= form.submit%>
 <% end %>
-<button><%= link_to 'Back', categories_path %></button>
+<button class="button-back"><%=link_to 'Back' , categories_path %></button>

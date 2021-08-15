@@ -1,14 +1,12 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
-body
-{
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap");
+body {
   max-width: 360px;
 }
-header
-{ 
+header {
   height: 64px;
   display: flex;
   flex-direction: row;
@@ -16,13 +14,12 @@ header
   align-items: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
 }
-img{
+img {
   border-radius: 8px 8px 0px 0px;
   max-width: 328px;
   max-height: 120px;
 }
-h1
-{
+h1 {
   //styleName: heading/base/regular;
   margin-left: 16px;
   font-family: Montserrat;
@@ -33,8 +30,7 @@ h1
   letter-spacing: 0em;
   text-align: left;
 }
-h2
-{
+h2 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -43,8 +39,7 @@ h2
   color: #303036;
   margin-left: 16px;
 }
-h3
-{
+h3 {
   margin-left: 16px;
   font-family: Montserrat;
   font-style: normal;
@@ -52,8 +47,7 @@ h3
   font-size: 24px;
   line-height: 32px;
 }
-p
-{
+p {
   margin-left: 16px;
   font-family: Inter;
   font-style: normal;
@@ -63,11 +57,10 @@ p
   color: #303036;
 }
 
-span
-{
+span {
   margin-left: 16px;
   font-family: Inter;
-  color: #7A7A7A;
+  color: #7a7a7a;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -94,12 +87,11 @@ span
   letter-spacing: 1.25px;
   text-align: center;
 }
-.button_search
-{
+.button_search {
   cursor: pointer;
   border: none;
   display: inline-block;
-  background: #F2F2F2;
+  background: #f2f2f2;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   position: static;
@@ -112,10 +104,9 @@ span
   align-items: center;
   padding: 6px 10px;
 }
-.button_new_category a
-{
+.button_new_category a {
   text-decoration: none !important;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -125,8 +116,7 @@ span
   letter-spacing: 1.25px;
   text-transform: uppercase;
 }
-.button_new_category
-{
+.button_new_category {
   margin-left: 16px;
   margin-bottom: 22px;
   margin-top: 16px;
@@ -139,8 +129,7 @@ span
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
 }
-.cards
-{
+.cards {
   margin-bottom: 32px;
   display: flex;
   justify-content: center;
@@ -150,40 +139,39 @@ span
   position: static;
   width: 328px;
   padding: 0px;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 }
-.card2
-{
+.card2 {
   position: relative;
 }
-.button_edit_and_delete
-{
+.button_edit_and_delete {
   position: relative;
   left: 248px;
   display: flex;
   justify-content: right;
 }
-.categories-list
-{
+.categories-list {
   margin-left: 16px;
 }
-.order_comments
-{
+.order_comments {
   display: flex;
   flex-direction: column-reverse;
 }
-.ajuste_ctg h3,span,p{
+.ajuste_ctg h3,
+span,
+p {
   margin: 0 16px;
 }
 
-.photo img{
+.photo img {
   border-radius: 8px 8px 0px 0px;
   max-width: 328px;
   max-height: 220px;
 }
 
-.h4{
+.h4 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -191,12 +179,11 @@ span
   line-height: 28px;
   color: #303036;
 }
-.desc_photo{
+.desc_photo {
   display: flex;
   flex-direction: column;
-
 }
-.photo{
+.photo {
   margin-bottom: 32px;
   margin-left: 16px;
   margin-right: 16px;
@@ -206,11 +193,21 @@ span
   position: static;
   width: 328px;
   padding: 0px;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 }
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
 }
 
+.form-label {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #303036;
+  margin-top: 16px;
+}
