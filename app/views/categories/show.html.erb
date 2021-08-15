@@ -1,3 +1,4 @@
+<div class = "card_photo">
 <h1><%= @category.name%></h1>
 <p><%= @category.description%></p>
 <button class="button_new_category"><%= link_to 'New Photo', new_category_photo_path(category_id: @category.id) %></button>
@@ -26,6 +27,7 @@
 </div>
 <div class = "order_comments">
   <%= render @category.comments %>
-  <h2>Comments</h2>
+  <p class = "commenth2">Comments</p>
   <%= render 'comments/forms' %>
+</div>
 </div>
