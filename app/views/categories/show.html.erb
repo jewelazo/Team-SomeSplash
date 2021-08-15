@@ -1,27 +1,31 @@
 <h1><%= @category.name%></h1>
 <p><%= @category.description%></p>
-<button class = "button_new_photo"><%= link_to 'New Photo', new_category_photo_path(category_id: @category.id) %></button>
+<button class="button_new_category"><%= link_to 'New Photo', new_category_photo_path(category_id: @category.id) %></button>
 <div>
   <% @photos.each do |photo| %>
-    <div class="card-photo">
+    <div class="photo">
       <a href="<%= photo_path(photo)%>">
         <%= image_tag photo.image if photo.image.attached? %>
       </a>
-      <h4><%= photo.title %></h4>
-      <span><%= photo.comments.count %>
-      <%= photo.comments.count > 1 ? "comments" : "comment" %></span>
-      <div class = "button_edit_and_delete">
-        <div> 
-          <%= link_to image_tag('edit.png', alt: "Button edit"), edit_photo_path(photo) %>
-        </div>
+      <div>
         <div>
-        <%= link_to image_tag('delete.png', alt: "Delete"), photo_path(photo), method: :delete, data: { confirm: "Are you sure?" } %>
-                </div>
+          <span class="h4"><%= photo.title %></span>
         </div>
+        <div class="footer">
+          <div>
+            <span><%= photo.comments.count %> <%= photo.comments.count > 1 ? "comments" : "comment" %></span>
+          </div>
+          <div>
+            <%= link_to image_tag('edit.png', alt: "Button edit"), edit_photo_path(photo)%>
+            <%= link_to image_tag('delete.png', alt: "Delete"), method: :delete, data: { confirm: "Are you sure?" } %>
+          </div>
+        </div>
+      </div>
     </div>
   <%end%>
 </div>
 <div class = "order_comments">
   <%= render @category.comments %>
+  <h2>Comments</h2>
   <%= render 'comments/forms' %>
 </div>
