@@ -11,7 +11,8 @@
         </div>
 </div>
 <button><%= link_to 'Back', category_path(@photo.category) %></button>
-
-
-<%= render @photo.comments %>
-<%= render 'comments/formsp' %>
+<div class = "order_comments">
+  <%= render @photo.comments %>
+  <h2>Comments</h2>
+  <%= render 'comments/formsp' %>
+</div>
