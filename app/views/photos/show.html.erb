@@ -1,6 +1,12 @@
+<div class = "card_photo">
 <h1><%= @photo.title%></h1>
 <p><%= @photo.description%></p>
 <p>Updated at <%= "August" if @photo.updated_at.month == 8 %> <%= @photo.updated_at.day%>,<%= @photo.updated_at.year%></p>
 <%= image_tag @photo.image if @photo.image.attached? %>
-<%= render @photo.comments %>
-<%= render 'comments/formsp' %>
+</div>
+
+<div class = "order_comments">
+  <%= render @photo.comments %>
+  <p class = "commenth2">Comments</p>
+  <%= render 'comments/formsp' %>
+</div>

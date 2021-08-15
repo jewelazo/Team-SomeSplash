@@ -6,6 +6,7 @@
     </div>  
   </div>  
 <% end %>
+<div class = "card_photo">
 <h3>Search</h3>  
   <% if !@results.nil? %>
     <% @results.each do |result| %>  
@@ -13,3 +14,4 @@
        <%= image_tag result.image %> 
     <% end %>
   <% end %>
+</div>
