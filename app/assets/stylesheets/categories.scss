@@ -33,6 +33,15 @@ h1
   letter-spacing: 0em;
   text-align: left;
 }
+h2
+{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #303036;
+}
 h3
 {
   margin-left: 16px;
@@ -50,6 +59,7 @@ p
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  color: #303036;
 }
 
 span
@@ -127,14 +137,32 @@ span
   align-items: flex-start;
   align-content: flex-start;
   position: static;
-  margin-bottom: 32px;
   width: 328px;
   padding: 0px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 }
+.card2
+{
+  position: relative;
+}
 .button_edit_and_delete
 {
+  position: relative;
+  left: 248px;
   display: flex;
   justify-content: right;
 }
+.categories-list
+{
+  margin-left: 16px;
+}
+.order_comments
+{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.ajuste_ctg h3,span,p{
+  margin: 0 16px;
+}
+

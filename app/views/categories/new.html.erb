@@ -17,7 +17,7 @@
       <%= form.label :name%>
     </div>
     <div>
-      <%= form.text_field :name%>
+      <%= form.text_field :name, class: 'name-ph-control', autofocus: true, placeholder: 'Technology'%>
     </div>
   </div>
 
@@ -26,7 +26,9 @@
       <%= form.label :description%>
     </div>
     <div>
-      <%= form.text_area :description%>
+
+      <%= form.text_area :name, class: 'name-ph-control', autofocus: true,
+       placeholder: 'Exploring our complicated relationship with technology...'%>
     </div>
   </div>
 
