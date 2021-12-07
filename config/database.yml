@@ -15,11 +15,11 @@
 # gem 'pg'
 #
 default: &default
-  host: somesplash-week09-team02_db_1
-  user: postgres
-  password: <%= ENV['PGPASSWORD'] %>
   adapter: postgresql
   encoding: unicode
+  username: postgres
+  password: <%= ENV['PGPASSWORD'] %>
+  host: <%= ENV['DB_HOST'] %>
  
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
